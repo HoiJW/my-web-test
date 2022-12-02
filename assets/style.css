@@ -6,28 +6,165 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-.wrapper {
-    display: flex;
-    margin: 0 auto;
-    padding: 0;
-}
+/* general style */
 
 html{
     font-size: 125%;
+    font-family: 'Montserrat', sans-serif;
+    background-color:  rgb(252, 243, 233);
 }
 
-header{
-    background-image: url(./vatroy.jpg);
-    height: 100vh;
+.wrapper{
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    
+   
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+body{
+    position: relative;
+}
+/* nav style */
+nav{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    color: #000;
+    position: fixed;
+    background-color:rgb(252, 243, 233);
     background-size: cover;
+    
+}
+
+nav ul{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding:10px ;
+}
+/* header style  */
+
+header{
+    height: 80vh;
+    background-image: url(./header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h1{
     font-size: 4rem;
-    font-family: 'Fredericka the Great', cursive;
+    color: rgb(87, 179, 133);
+    text-align: center;
+    text-shadow: 2px 2px #00000059;
+    margin-top: 10%;
+    
 }
 
-li{
-    font-family: 'Fredericka the Great', cursive;
-    color: aliceblue;
+span{
+    display: block;
+    color: rgb(255, 123, 200);
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* main style starts */
+
+
+/* about style */
+.about{
+    margin: 1%;
+    padding: 1%;
+    
+
+}
+
+.about .wrapper{
+    display: flex;
+    height: 100%;
+}
+
+.image-container{
+    flex-basis: 30%;
+    height: ;
+}
+
+.textContainer{
+    flex-basis: 38%;
+    margin: 0 15px;
+    
+}
+
+/* gallery style */
+.gallery{
+    background-color: #e3c1c0;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.gallery .wrapper{
+    flex-direction: column;
+}
+
+.gallery h2{
+    text-align: center;
+}
+
+.gallery ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery li{
+    flex-basis: 32%;
+    margin-top: 10px;
+}
+/* contact style */
+
+.contact{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52),rgba(245, 246, 252, 0.52),rgba(245, 246, 252, 0.52)),url(./bot.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+/* main ends */
+
+/* footer style */
+
+footer{
+    background-color: #4b7e68;
+}
+
+
+@media (max-width:768px){
+    .about .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery ul {
+        flex-direction: column;
+    }
+
 }
